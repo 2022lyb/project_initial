@@ -1,6 +1,7 @@
 
+DOC=chisel-book
 
-all: test gencode fig genslides
+all: test gencode fig book genslides
 
 #	scala scripts/gencode.scala
 
@@ -52,7 +53,11 @@ chisel:
 flasher:
 	sbt "testOnly FlasherSpec"
 
+rtf:
+	latex2rtf chisel-book.tex
 
+detex:
+	detex chisel-book.tex > chisel-book.txt
 
 eclipse:
 	sbt eclipse
