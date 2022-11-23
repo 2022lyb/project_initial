@@ -74,5 +74,8 @@ object TesterPeekPoke extends App {
     new TesterPeekPoke(c)
   }
 }
-//- end
+
+object v_src_test extends App {
+	(new chisel3.stage.ChiselStage).emitVerilog(new DeviceUnderTest())   
+}
 
