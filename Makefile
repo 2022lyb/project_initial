@@ -3,7 +3,8 @@
 all: test 
 
 test:
-	sbt test
+#	sbt test
+	sbt "testOnly WaveformCounterTest"
 
 
 veryclean:
