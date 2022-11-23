@@ -22,3 +22,6 @@ wave:
 wave1:
 	sbt "testOnly SimpleTest -- -DwriteVcd=1"
 
+hdl:
+	#Enter the number of your target class for verilog generation
+	sbt run
